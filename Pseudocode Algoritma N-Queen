@@ -1,0 +1,20 @@
+START
+Buat papan NxN
+FUNCTION Solve(kolom)
+    IF kolom >= N
+        CETAK solusi
+        RETURN True
+
+    UNTUK setiap baris
+        IF posisi aman
+            LETAKKAN ratu
+
+            IF Solve(kolom+1)
+                RETURN True
+
+            HAPUS ratu
+
+    RETURN False
+
+PANGGIL Solve(0)
+END
